@@ -1,0 +1,150 @@
+/* || RESET */
+
+/* || VARIABELS */
+
+:root {
+  --background-color-code: #f7f7f7;
+  --color-text: #4d4e53;
+}
+
+/* || GENERAL STYLES  */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: var(--color-text);
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2 {
+  color: black;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-left: 28px;
+  padding-bottom: 12px;
+  margin-top: 12px;
+}
+
+p,
+.main li {
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+p {
+  padding: 9px 0 9px 42px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  background-color: #e6e6e6;
+  font-size: 0.68rem;
+  line-height: 2em;
+  padding: 13px 6px 13px 16px;
+  margin: 5px 52px;
+  letter-spacing: 1.2px;
+  word-spacing: 2px;
+  font-family: monospace;
+}
+
+/* || UTILITY CLASSESS */
+
+/* || BLOCKS */
+
+#nav {
+  width: 310px;
+  border-right: 3px solid gray;
+  position: fixed;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-top: 14.6px;
+  padding-bottom: 22px;
+}
+
+.main-nav {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  padding: 20px;
+  margin-left: 300px;
+}
+
+/* || ELEMENTS */
+
+#nav ul {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main-nav__link {
+  list-style-type: none;
+  border-top: 1px solid rgb(80, 80, 80);
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.main li {
+  margin-left: 100px;
+  list-style-type: disc;
+  padding: 9px 0 9px 0;
+}
+
+.main li:hover {
+  cursor: pointer;
+}
+
+.main .inner-li {
+  list-style-type: circle;
+  margin-left: 60px;
+  padding-right: 45px;
+}
+
+.variables__p {
+  font-size: 1rem;
+  margin-left: 28.6px;
+}
+
+.reference {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* || MODIFIERS*/
+
+@media screen and (max-width: 806px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  #nav {
+    position: static;
+    width: 100vw;
+    height: 150px;
+    padding: 0;
+  }
+
+  .main {
+    position: static;
+    margin: 0;
+  }
+
+  .main-nav {
+    border: 1px solid gray;
+  }
+}

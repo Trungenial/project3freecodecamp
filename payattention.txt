@@ -1,0 +1,15 @@
+Pixels, REM, EM, percent, VH, VW. These CSS units, so the units we use when we're building websites, can be confusing. And knowing when to use which to get the best result is something a lot of us struggle with.
+
+Which makes sense, since a lot of these units can be used interchangeably. How and when you use them is going to depend a lot on what you want to achieve. Understanding the basics will allow you to make informed decisions, instead of choosing randomly and hoping it's the correct option.
+
+Pixels are useful for icon sizes, image heights, padding, margins and all kinds of details, such as border radiuses or drop shadows. I also use them for the width of my containers and in turn, the width of my website, because they are the perfect unit when you want something to be consistent. Use them when you want something to look identical on every screen.
+
+Percentages are amazing for padding, because the padding will stay relative to the parent element, meaning, as the screen gets smaller and your parent containers get smaller with it, the padding will also get smaller.
+
+VH and VW are relative to the viewport. If you want something to take up all of the available space, or a certain amount of the available space, they are a good option. You can even use VW to control the width of your website. I generally avoid them, though.
+
+REM is the perfect unit for font sizes. It is based on the font size set in the HTML, which is 16 pixels by default and I do not recommend you change it. REM will adapt to the user's system and browser preferences, while pixels will not. If somebody has trouble with their vision and they set their browser's font size to more than 16 pixels, REM will adapt and get bigger. Understanding the proportions between different sizes is also much easier than with pixels, there's just less math involved. REM will not scale up or down depending on the screen size.
+
+EM is based on the font size of the parent element. Because of that, it can get messy and it can produce some unexpected, unwanted results. But it's perfect for the line height. Because it's based on the font size, 1 EM equals the exact font size. Meaning, 1.5 EM equals 150% of the font size, 1.25 equals 125% and so on. It's a multiplier. Once you set your line height to EM, it doesn't matter what you do to the font size. The proportions between the font size and the line height are always going to stay the exact same.
+
+Another thing EM is great for is button padding. If you set your button padding to EM, it's always going to scale up or down relative to the font size of the button. This makes it easy to create buttons that scale up automatically, helping you keep the visual consistency intact with minimal effort required.
